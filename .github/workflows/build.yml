@@ -37,6 +37,10 @@ jobs:
                       target: 'aarch64-pc-windows-msvc'
                       args: '--target aarch64-pc-windows-msvc'
 
+                    - platform: 'ubuntu-22.04'
+                      target: 'android'
+                      args: '--target aarch64-linux-android'
+
         runs-on: ${{ matrix.platform }}
         timeout-minutes: 60
         steps:
